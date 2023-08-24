@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: rgb(52, 52, 61);
+}
+
+/* Page Header */
+.header-container{
+    margin: auto;
+    height: 40px;
+    background-color: rgb(56, 56, 82);
+    color: white;
+}
+.header-title{
+    padding: 10px;
+}
+
+
+
+/* Toggle Button */
+.toggle{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 20%;
+}
+
+.toggle p{
+    flex: 1;
+    font-size: large;
+    padding: 10px;
+}
+
+.toggle-btn input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: relative;
+    height: 24px;
+    width: 40px;
+    background-color: white;
+    border-radius: 40px;
+
+}
+
+.slider:before {
+    position: absolute;
+    content: " ";
+    top: 2px;
+    left: 3px;
+    bottom: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 19px;
+    transition: .4s;
+}
+
+.input:checked + .slider {
+ background-color: darkgray;
+}
+
+.input:checked + .slider:before{
+    transform: translateX(14px);
+}
+
+.side-navbar-container{
+    display: flex;
+    
+}
+.main-top-nav-menu{
+    margin-left: 2px;
+    /* padding: 10px; */
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(26, 25, 25);
+}
+.video-component, .status-component,.login-component{
+    display: flex;
+    justify-content: space-around;
+}
+.video-text{
+    padding-top: 12px;
+    
+}
+.video-icon{
+    width: 60px;
+    height: 45px;
+    border: none;
+    background-color: rgb(50, 55, 70);
+}
+.video-icon i{
+    font-size: large;
+    color: white;
+    
+}
+.status-text{
+    padding-top: 12px;
+}
+.laptop-icon, .ctosshair-icon, .break-btn,.coffee-icon,.mute-icon,.check-in-btn{
+ width: 50px;
+ height: 35px;
+ border-radius: 20px;
+ background-color: transparent;
+ margin-top: 5px;
+ border: 1px solid rgb(52, 52, 61);
+ color: white;
+}
+
+.break-btn,.coffee-icon,.mute-icon{
+    width: auto;
+    padding: 10px;
+    text-align: center;
+}
+.check-in-btn{
+    width: auto;
+    padding: 5px;
+
+}
+.check-in-btn option{
+background-color: black;
+}
+.cancel-icon{
+    margin-top: 7px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(50, 55, 70);
+    color: white;
+    border-radius: 50%;
+    border: none;
+}
+
+.demo{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.side-nav-menu{
+    width: 5%;
+    background-color:black ;
+    color: white;
+    margin-top: 1.5px;
+}
+.nav-icon{
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .nav-icon:hover{
+    background-color: rgb(27, 27, 27);
+} 
+
+.chat-section-content{
+    width: 15%;
+    margin-top: 1.5px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    
+}
+
+.main-section-container{
+    width: 80%;
+    /* background-color: cadetblue; */
+   
+}
+.c-section-title {
+    flex: 1;
+   
+
+}
+
+.main-content-container{
+padding: 60px;
+}
+.other-options-row{
+    display: flex;
+    /* justify-content: space-around; */
+    /* padding: 30px; */
+    color: white;
+}
+
+.vertical-line{
+    width: 1px;
+    height: 20px;
+    background-color: white;
+    
+}
+.meetingbtn-1{
+    height: 50px;
+    padding:10px ;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(87, 87, 207);
+    color: white;
+}
+.fa-calendar{
+    padding: 10px;
+}
+.search-bar{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+.input-field{
+    background-color: black;
+    border: none;
+    outline: none;
+    width: 80%;
+    margin: 5px;
+    font-size:medium;
+    color: white;
+}
+.fa-magnifying-glass{
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.grid-for-atWork, .grid-for-away, .grid-for-message{
+    margin-top: 5px;
+    width: 80%;
+    height: 600px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+}
+.at-work, .away,.meetings{
+    padding-top: 50px;
+    color: white;
+}
+.office-in, .weekend{
+    color: green;
+    background-color: black;
+    height: 20px;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.weekend{
+    color: white;
+}
